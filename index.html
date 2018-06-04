@@ -4,63 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <title>Союз вредителей</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/glitch.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/jquery.fullpage.css">
-
+    <link rel="stylesheet" href="css/VHS.css">
     <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/jquery.fullpage.js"></script> 
-
+    <script src="js/jquery.fullpage.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
 
-      <script>
-      jQuery(document).ready(function($) {
-      $("#fullpage").fullpage({
-      sectionsColor:['rgba(0, 0, 0, 0.7)','#232323FF','#808080FF'],
-      });
+    <script>
+    jQuery(document).ready(function($) {
+        $("#fullpage").fullpage({
+            sectionsColor: ['rgba(0, 0, 0, 0.7)', '#232323FF', 'black', 'black', 'red', '#3F42BFFF'],
+        scrollBar: true,
+        afterRender: function(){
+            new WOW().init();
+        }
+        });
     })
     </script>
 </head>
 
 <body>
-   <div id="fullpage">
-   		<div class="section">
-   			<div class="background-wrap">
-
-          <video id="video-bg-elem" loop muted data-autoplay>
-              <source src="img/main/VHS.mp4" type="video/mp4"></source>
-              <source src="img/main/VHS.webm" type="video/webm"></source>
-          </video>
-          
-          <div class="welcome-logo">
-            <div class="example-one fadeInDown animated" id="logo" data-text="ВИРУСЫ">ВИРУСЫ</div>
-            <hr class="fadeInLeftBig animated">
-            <p class="fadeInUp animated">Программы-шпионы, вирусы, черви, трояны</p>
-          </div>
+    <div id="fullpage">
+        <div class="section">
+            <div class="background-wrap">
+                <video id="video-bg-elem" loop muted data-autoplay>
+                    <source src="img/main/VHS.mp4" type="video/mp4"></source>
+                    <source src="img/main/VHS.webm" type="video/webm"></source>
+                </video>
+                <div class="welcome-logo">
+                    <div id="root" class="fadeInDown animated" >
+                    <div class="VHS" id="text" data-text="ВИРУСЫ">ВИРУСЫ</div>
+                    </div>
+                    <div class="welcome-descr">
+                    <hr class="fadeInLeftBig animated">
+                    <p class="fadeInUp animated">Программы-шпионы, вирусы, черви, трояны</p>
+                    </div>
+                </div>
+            </div>
         </div>
-   		</div>
-   		<div class="section">
-        <div class="slide">
-   			<div class="section_container">
-                <h2 class="example-one section__title" data-text="Начало.">Начало.</h2>
-                <p class="text">История появления и эволюции компьютерных вирусов, сетевых червей, троянских программ представляет собой достаточно интересный для изучения предмет. Зародившись как явление весьма необычное, как компьютерный феномен, в 1980-х годах, примитивные вирусы постепенно превращались в сложные технологические разработки, осваивали новые ниши, проникали в компьютерные сети. Идея вируса, заражающего другие программы и компьютеры, за двадцать лет трансформировалась в криминальный бизнес. Будучи изначально творчеством вирусописателей-исследователей, компьютерные вирусы стали оружием в руках интернет-преступников.</p>
-                <img src="img/begining/matrix-code-animation.gif" alt="" style="float: right;">
+        <div class="section">
+            <div class="slide">
+                <div class="section-container">
+                    <div class="slide-title-cent">
+                        <div class="wow fadeInDown animated example-one section__title" data-text="HISTORY.">HISTORY.</div>
+                    </div>
+                    <hr class="wow fadeInLeftBig animated">
+                    <p style="text-align: center;" class="wow fadeInUp animated">Первое появление вирусов и их развитие</p>
                 </div>
+            </div>
+            <div class="slide">
+                <div class="section_container">
+                    <h2 class="example-one section__title " data-text="Начало.">Начало.</h2>
+                    <p class="text">История появления и эволюции компьютерных вирусов, сетевых червей, троянских программ представляет собой достаточно интересный для изучения предмет. Зародившись как явление весьма необычное, как компьютерный феномен, в 1980-х годах, примитивные вирусы постепенно превращались в сложные технологические разработки, осваивали новые ниши, проникали в компьютерные сети. Идея вируса, заражающего другие программы и компьютеры, за двадцать лет трансформировалась в криминальный бизнес. Будучи изначально творчеством вирусописателей-исследователей, компьютерные вирусы стали оружием в руках интернет-преступников.</p>
+                    <img id="matrix-img" src="img/begining/matrix-code-animation.gif" alt="" style="float: right;">
                 </div>
-                <div class="slide">
-                  <div class="section-container">
-                    
-                  </div>
+            </div>
+            <div class="slide">
+                <div class="section_container">
+                    <h2 style="float: right; margin-right:  5%" class="example-one section__title" data-text="APPLE II.">APPLE II.</h2>
+                    <p style="float: left; margin-top: -2%" class="text">
+                        Компьютер Apple II стал первым легкодоступным компьютером с огромными, на то время возможностями. Первый вирус для компьютера от Apple был написан 15-ти летним Ричом Скрентой (Rich Skrenta). Вирус назывался Elk Cloner. Он инфицировал загрузочный сектор Apple II и при каждой 50-ой загрузке выводил на экран стишок:
+                    </p>
+                    <div class="code css-typing" style="float: right; margin-right: 5%; margin-top: 11%;">
+                        <span> Elk Cloner: The program with a personality </span>
+                        <p> It will get on all your disks </p>
+                        <p> It will infiltrate your chips </p>
+                        <p> Yes it's Cloner! </p>
+                        <p> It will stick to you like glue </p>
+                        <p> It will modify ram too </p>
+                        <p> Send in the Cloner! </p>
+                    </div>
+                    <img id="matrix-img" src="img/apple-viruses/ForthrightTheseBlowfish-size_restricted.gif" alt="" style="float: left; width: 45%;">
                 </div>
-   		</div>
-   		<div class="section">
-   			<div class="slide"><h1>Слайд 1</h1></div>
-        <div class="slide"><h1>Слайд 2</h1></div>
-   		</div>
-   </div>
-
+            </div>
+            <div class="slide">
+                <div class="section_container">
+                    <h2 style="float: right; margin-right:  5%" class="example-one section__title" data-text="ANTIVIRUS">ANTIVIRUS</h2>
+                    <p class="text">Первые антивирусные утилиты появились зимой 1984 года. Энди Хопкинс написал программы CHK4BOMB и BOMBSQAD. CHK4BOMB позволяла проанализировать текст загрузочного модуля и выявляла все текстовые сообщения и «подозрительные» участки кода. Благодаря своей простоте и эффективности CHK4BOMB получила значительную популярность. Программа BOMBSQAD.COM перехватывает операции записи и форматирования, выполняемые через BIOS. При выявлении запрещённой операции можно разрешить её выполнение.</p>
+                    <img id="matrix-img" src="img/antivirus/RyWlXol.gif" alt="" style="float: right; width: 45%;">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+                <div class="slide-title-cent">
+                    <div class="wow fadeInDown animated example-one section__title" data-text="_SQUAD.">_SQUAD.</div>
+                </div>
+                <hr class="wow fadeInLeft animated">
+                <p style="text-align: center;" class="wow fadeInUp animated">Cемейство вирусов: их виды и способы борьбы с ними</p>
+                <div class="arrows bounce animated infinite">
+                    <img style="height: 100px; float: left;" src="img/long-arrow-down.png" alt="">
+                    <img style="height: 100px; float:right; " src="img/long-arrow-down.png" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div style="border: 10px solid white; padding-left: 5%; padding-right: 5%;" class="section-container">
+                <h2 class="example-one section__title slide-title-cent" data-text="_TROJAN._">_TROJAN._</h2>
+                <p class="text" style="width: 30%;">По анологии с троянским конём из "Илиады" Гомера проникают в компьютер жертвы под видом чего-то безобидного. Но, как только вредоносный код будет исполнен, компьютер жертвы начинает выполнять действия создателя трояна: воровать пароли, портить системные и пользовательские файлы или даже саму систему. Распространяются на торрент-трекерах, файлообменниках или подкидываются жертве методом социальной инженерии.</p>
+                <img style="margin: 5%;" src="img/trojan/trojan.gif" alt="">
+                <p class="text" style="float: right; width: 25%;"><span style="text-decoration: underline;" class="metods">Методы борьбы - простейшие: <br></span>
+                • Не скачивать и не запускать незнакомые файлы полученные из ненадёжного или подозрительного источника<br>
+                • При малейшем подозрении на наличие заражения, воспользоваться бесплатными утилитами вроде <br>
+                </p>
+                <p class="text" style="width: 100%; text-align: center;">Примеры троянских программ: HookDump, Back Orifice, Pinch, TDL-4, Trojan.Winlock.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h1 class="winlock">Windows заблокирован!</h1>
+            <div style="border: 10px solid white; padding-left: 5%; padding-right: 5%; height: 75%;" class="section-container">
+                <h2 class="example-one section__title slide-title-cent" data-text="MALWARE._">MALWARE._</h2>
+                <p class="text" style="width: 30%;">MALWARE (от слов malicious и software) или Малварь - целое семейство вредоносов главная цель которых нанести вред компьютеру юзера или его содержимому.<br>
+                Могут наносить как незначительный вред, в виде подсовывания рекламы, так лишать компьютер возможность работать, шифруя файлы или блокируя работу системы.
+                </p>
+                <img style="width: 40%" src="img/malware/Phantom1.gif" alt="">
+                <p class="text" style="float: right; width: 25%;"><span style="text-decoration: underline;" class="metods">Методы борьбы: <br></span>
+                Такая программа хорошо маскируется и может ничем не выдавать свое присутствие для пользователя. Для подобных задач существует специализирвоанный софт, например <a href="https://ru.malwarebytes.com/">Malwarebytes</a>. Однако очень многие вредоносные программы этого типа обладают настолько высокой степенью защиты, что их практически невозможно удалить после запуска. 
+                </p>
+            </div>
+            <h1 class="winlock">Для разблокировки дочитайте статью</h1>
+        </div>
+        <div class="section">
+            <div style="border: 10px solid white; padding-left: 5%; padding-right: 5%; height: 73%;" class="section-container">
+                <h2 class="example-one section__title slide-title-cent" data-text="BOT_NET.">BOT_NET.</h2>
+                <p class="text" style="width: 30%;">Сеть компьютеров, зараженных этим типом вирусов, готова в любой момент, по команде злоумышленника: атаковать запросами необходимый сервер, огранизовать спам-рассылку или использовать вычислительные мощности для майнинга криптовалюты. На изображении справа видна интерактивная карта DDOS-атак, в данном случае использовался мощный ботнет из тысяч компьютеров.</p>
+                <img style="width: 40%" src="img/botnet/Mirai-botnet-linked-to-massive-ddos-attacks-on-dyn-dns-gif.gif" alt="">
+                <p class="text" style="float: right; width: 25%;">Методы борьбы:<br>
+                • Не скачивать и не запускать незнакомые файлы полученные из ненадёжного или подозрительного источника<br>
+                • При малейшем подозрении на наличие заражения, отключить компьютер от сети и воспользоваться бесплатными утилитами для сканирования.<br>
+                </p>
+                <p class="text" style="width: 100%; text-align: center;">Примеры известных DDOS-атак: Mafiaboy, Chanology, Ababil, Mirai</p>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
 </body>
 
 </html>

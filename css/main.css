@@ -18,11 +18,17 @@ body {
     padding: 0%;
 }
 
+a {
+    color: white;
+}
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
+body {overflow: hidden!important;}
 
 hr {
 	width: 45%;
@@ -93,4 +99,42 @@ body {
     padding-top: 5%;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+.slide-title-cent {
+    margin-left: 38%;
+    margin-right: 38%;
+}
+
+.code {
+    font-family: 'Courier New', sans-serif;
+    width: 35%;
+    padding: 2%;
+    color: green;
+    text-shadow: #54D12DFF 0 0 20px;
+    background-color: black;
+    font-weight: 700;
+}
+
+.arrows {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.winlock {
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+}
+
+.welcome-descr {
+    margin-top: 32%;
+}
+
+@media screen and (max-width: 2560px) {
+    #matrix-img {
+        width:50%;
+    }
 }
